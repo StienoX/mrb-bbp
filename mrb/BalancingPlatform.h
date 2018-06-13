@@ -75,7 +75,7 @@ private:
 	cv::Point servoCalib[3];
 
 	/**
-	 * @brief Drawable circles used to show calibration points after calibration.
+	 * @brief Drawable circles used to show the detected circles found in the update function.
 	 * 
 	 */
 	std::vector<cv::Vec3f> circles;
@@ -93,7 +93,7 @@ private:
 	cv::Mat editedFrame;
 
 	/**
-	 * @brief Latest cv window frame.
+	 * @brief Name of the window used to display camera frames.
 	 * 
 	 */
 	std::string windowName;
@@ -205,7 +205,7 @@ public:
 	 * @brief New camera input frame to handle.
 	 * 
 	 * @param cameraFrame Camera input frame.
-	 * @param mode Color seperation mode used.
+	 * @param mode Color seperation mode used. Defaults to gray.
 	 * @return int Zero if executed successfully, something else meant it failed.
 	 */
 	int update(cv::Mat & cameraFame, const Color & mode = Color::gray);
