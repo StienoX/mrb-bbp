@@ -94,10 +94,6 @@ void BalancingPlatform::setNewSetpoint(const cv::Point & setpoint) {
 
 void BalancingPlatform::onMouse(int event, int x, int y, int flag) {
 	if (event == cv::EVENT_LBUTTONDOWN) {
-
-		//cv::imshow("cam", cameraFrame);
-
-		//std::cout << x << "," << y << '\n';
 		latestClickX = x;
 		latestClickY = y;
 		setpoint.x = x;

@@ -65,7 +65,3 @@ char SerialController::receiveResponse() {
 
 	return readResult[0];
 }
-
-SerialController::~SerialController()
-{
-}
